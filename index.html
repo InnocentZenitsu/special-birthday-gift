@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Happy Birthday My Love 🎂</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="bgMusic" src="assets/music/jeene-laga-hun.mp3" loop preload="auto"></audio>
+
+  <!-- Main Countdown / Entry -->
+  <div id="main-container" class="container">
+    <h1 class="headline">Happy Birthday Countdown 🎉</h1>
+    <div id="countdown"></div>
+
+    <!-- Buttons appear after unlock -->
+    <div id="chapter-buttons" class="chapter-panel" style="display:none;">
+      <h2>Explore Our Journey 💖</h2>
+      <button class="btn" onclick="goTo('chapter1.html')">Chapter 1 ❤️</button>
+      <button class="btn" onclick="goTo('chapter2.html')">Chapter 2 💞</button>
+      <button class="btn" onclick="goTo('chapter3.html')">Chapter 3 💖</button>
+      <button class="btn" onclick="goTo('chapter4.html')">Chapter 4 💕</button>
+      <button class="btn final" onclick="goTo('birthday.html')">Final Surprise 🎁</button>
+    </div>
+  </div>
+
+  <!-- Dynamic Chapter Loader -->
+  <div id="content"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
