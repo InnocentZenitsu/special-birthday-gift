@@ -9,8 +9,9 @@ function initCountdown() {
   const el = document.getElementById('countdown');
   const chapterBtns = document.getElementById('chapter-buttons');
 
-  // TEMP: unlock after 5 seconds from now (for testing)
-const targetUTC = Date.now() + 5000;
+ // Target: Oct 17, 2025 00:00 Dhaka (UTC+6)
+const targetUTC = Date.UTC(2025, 9, 16, 18, 0, 0);
+
 
 
 
@@ -167,4 +168,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
   initMusicBindings();
   if (document.getElementById('countdown')) initCountdown();
 });
+
 
